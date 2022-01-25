@@ -1,10 +1,3 @@
 teksts = input("Ievadi tekstu: ")
-def countWords(teksts):
-  summa = 0
-  sar1 = teksts.split()
-  for word in sar1:
-    if len(word)>1:
-      summa += 1
-    print(summa)
-  return summa
-countWords(teksts)
+result = len(teksts.split())
+print("Šajā teikumā ir " + str(result) + " vārdi.")
